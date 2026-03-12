@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GILA Açaí & Sorvetes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="128x128">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="logo.png" alt="Logo GILA" class="logo">
+      <h1>Monte seu Copo de Açaí</h1>
+    </header>
+    <form id="pedidoForm">
+      <div class="linha">
+        <label>Nome:
+          <input type="text" name="nome" required>
+        </label>
+        <label>Número do Pedido:
+          <input type="text" name="numero" required>
+        </label>
+      </div>
+
+      <fieldset>
+        <legend>Tamanho do Copo</legend>
+        <label><input type="radio" name="tamanho" value="300ML – R$ 13,00" required> 300ML – R$ 13,00</label><br>
+        <label><input type="radio" name="tamanho" value="400ML – R$ 15,00"> 400ML – R$ 15,00</label><br>
+        <label><input type="radio" name="tamanho" value="500ML – R$ 18,00"> 500ML – R$ 18,00</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Consumo</legend>
+        <label><input type="radio" name="consumo" value="Comer aqui" required> Comer aqui</label><br>
+        <label><input type="radio" name="consumo" value="Levar para viagem"> Levar para viagem</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sabores</legend>
+        <div class="checkbox-grid">
+          <label><input type="checkbox" name="sabores" value="Abacaxi ao Vinho"> Abacaxi ao Vinho</label>
+          <label><input type="checkbox" name="sabores" value="Açaí"> Açaí</label>
+          <label><input type="checkbox" name="sabores" value="Banofe"> Banofe</label>
+          <label><input type="checkbox" name="sabores" value="Bombom-baby"> Bombom-baby</label>
+          <label><input type="checkbox" name="sabores" value="Chocolate"> Chocolate</label>
+          <label><input type="checkbox" name="sabores" value="Chocolate Branco"> Chocolate Branco</label>
+          <label><input type="checkbox" name="sabores" value="Cupuacu"> Cupuaçu</label>
+          <label><input type="checkbox" name="sabores" value="Iogurte com Amora"> Iogurte com Amora</label>
+          <label><input type="checkbox" name="sabores" value="Kinder Ovo"> Kinder Ovo</label>
+          <label><input type="checkbox" name="sabores" value="Maracujá"> Maracujá</label>
+          <label><input type="checkbox" name="sabores" value="Napolitano"> Napolitano</label>
+          <label><input type="checkbox" name="sabores" value="Ninho Trufado"> Ninho Trufado</label>
+          <label><input type="checkbox" name="sabores" value="Pistache"> Pistache</label>
+          <label><input type="checkbox" name="sabores" value="Sensação"> Sensação</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Condimentos</legend>
+        <ul class="lista">
+          <li><label><input type="checkbox" name="condimentos" value="Amendoim Granulado"> Amendoim Granulado</label>
+          </li>
+          <li><label><input type="checkbox" name="condimentos" value="Bala de Goma"> Bala de Goma</label></li>
+          <li><label><input type="checkbox" name="condimentos" value="Bolinha Chocoball"> Bolinha Chocoball</label></li>
+          <li><label><input type="checkbox" name="condimentos" value="Chocoball Mini"> Chocoball Mini</label></li>
+          <li><label><input type="checkbox" name="condimentos" value="Confete"> Confete</label></li>
+          <li><label><input type="checkbox" name="condimentos" value="Dentadura"> Dentadura</label></li>
+          <li><label><input type="checkbox" name="condimentos" value="Granola"> Granola</label></li>
+          <li><label><input type="checkbox" name="condimentos" value="Leite em Pó"> Leite em Pó</label></li>
+          <li><label><input type="checkbox" name="condimentos" value="Marshmallow"> Marshmallow</label></li>
+          <li><label><input type="checkbox" name="condimentos" value="Paçoca"> Paçoca</label></li>
+          <li><label><input type="checkbox" name="condimentos" value="Sucrilhos"> Sucrilhos</label></li>
+          <li><label><input type="checkbox" name="condimentos" value="Wafer Palito"> Wafer Palito</label></li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Frutas</legend>
+        <ul class="lista">
+          <li><label><input type="checkbox" name="frutas" value="Abacaxi"> Abacaxi</label></li>
+          <li><label><input type="checkbox" name="frutas" value="Banana"> Banana</label></li>
+          <li><label><input type="checkbox" name="frutas" value="Manga"> Manga</label></li>
+          <li><label><input type="checkbox" name="frutas" value="Morango"> Morango</label></li>
+          <li><label><input type="checkbox" name="frutas" value="Uva Verde"> Uva Verde</label></li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Cremes</legend>
+        <ul class="lista">
+          <li><label><input type="checkbox" name="cremes" value="Creme de Avelã"> Creme de Avelã</label></li>
+          <li><label><input type="checkbox" name="cremes" value="Creme Ninho"> Creme Ninho</label></li>
+          <li><label><input type="checkbox" name="cremes" value="Leite Condensado"> Leite Condensado</label></li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Entrega</legend>
+        <ul class="lista">
+          <li><label><input type="radio" name="entrega" value="Balcão" required> Balcão</label></li>
+          <li><label><input type="radio" name="entrega" value="Delivery"> Delivery</label></li>
+          <li><label><input type="radio" name="entrega" value="iFood"> iFood</label></li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pagamento</legend>
+        <ul class="lista">
+          <li><label><input type="checkbox" name="pagamento" value="Débito"> Débito</label></li>
+          <li><label><input type="checkbox" name="pagamento" value="Crédito"> Crédito</label></li>
+          <li><label><input type="checkbox" name="pagamento" value="Dinheiro"> Dinheiro</label></li>
+          <li><label><input type="checkbox" name="pagamento" value="PIX"> PIX</label></li>
+        </ul>
+      </fieldset>
+
+      <div class="buttons">
+        <button type="submit">Salvar Pedido</button>
+        <button type="button" onclick="imprimirCupom()">Imprimir Cupom</button>
+        <button type="button" onclick="limparHistorico()">Limpar Histórico</button>
+      </div>
+    </form>
+
+    <section id="historico">
+      <h2>Histórico de Pedidos</h2>
+      <ul id="listaPedidos"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
